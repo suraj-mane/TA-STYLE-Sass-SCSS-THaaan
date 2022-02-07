@@ -1,0 +1,41 @@
+a{
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between; 
+}
+body {
+  font-family: 'Archivo', sans-serif;
+  line-height: 1.7;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+.col-30 {
+  flex: 0 1 30%;
+}
+.col-48 {
+  flex: 0 1 48%;
+}
+.col-24 {
+  flex: 0 1 20%;
+}
+.col-40 {
+  flex: 0 1 45%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+button {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  border-radius: 40px;
+}
+img {
+  width: 100%;
+}
