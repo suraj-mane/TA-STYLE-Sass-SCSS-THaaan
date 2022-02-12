@@ -22,6 +22,7 @@ body {
 .container {
   width: 1400px;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .col-30 {
@@ -34,5 +35,33 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 48%;
           flex: 0 1 48%;
+}
+
+.col-24 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.col-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 1px solid #DC3C45;
+  border-radius: 40px;
+}
+
+img {
+  width: 100%;
 }
 /*# sourceMappingURL=genral.css.map */

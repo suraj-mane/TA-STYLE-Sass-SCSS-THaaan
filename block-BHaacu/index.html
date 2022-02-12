@@ -12,15 +12,16 @@
   <script src="https://kit.fontawesome.com/bcf5c05fae.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- header -->
   <header>
     <article class="navbar-main">
       <div class="contact-nav">
-        <div class="container flex space-between">
-          <ul class="flex">
+        <div class="container flex space-between md-wrap">
+          <ul class="flex md-100">
             <li><a href="#"><i class="fas fa-phone"></i> +1-1245-678-980</a></li>
             <li><a href="#"><i class="fas fa-envelope"></i> info@yourdomin.com</a></li>
           </ul>
-          <ul class="flex">
+          <ul class="flex md-100">
             <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -29,14 +30,16 @@
         </div>
       </div>
       <div class="second-navbar">
-        <nav class="container navbar flex space-between">
+        <nav class="container navbar flex space-between md-100">
           <div>
             <h1><a href="index.html" class="brand">Uni<span class="brand-name">TECH</span></a></h1>
           </div>
-          <ul class="flex space-between dropdown">
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About Us</a></li>
-            <li><a href="#" class="nav-link">Services</a></li>
+          <label for="bar"><i class="fas fa-grip-lines"></i></label>
+          <input type="checkbox" id="bar">
+          <ul class="flex space-between dropdown md-100">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
             <li class="active"><a href="#" class="nav-link ">Pages <i class="fas fa-chevron-down"></i></a>
               <ul>
                 <li><a href="pricing.html" class="b">pricing</a></li>
@@ -50,41 +53,43 @@
                 <li><a href="#" class="b">Blog Single</a></li>      
               </ul>
             </li>
-            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
           </ul>  
         </nav>
       </div>
     </article>
   </header>
   <main>
-    <section class="banner">
-      <article class="container banner-info">
-        <h2 class="banner-title">BEST BUSINESS SERVICES</h2>
-        <p class="banner-text">Let's Grow Your Business Togather</p>
-        <button class="banner-btn">Quick Call</button>
-      </article>
-      <img src="assets/media/banner-1.jpg" alt="banner" class="banner-img">
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-text">
+          <h2>BEST BUSINESS SERVICES</h2>
+          <P>Lets grow your business together</P>
+          <button>Quick Call</button>
+      </div>
+      <img src="assets/media/banner-1.jpg" alt="hero-img">
     </section>
+    <!-- Service -->
     <section class="service">
-      <article class="container">
-        <div class="service-info">
-          <h2>Our Services</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="flex boxes">
-          <div class="col-30 box">
-            <img src="assets/media/consulting.svg" alt="consulting">
-            <h4>Consulting</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sequi incidunt inventore</p>
+     <article class="container">
+       <div class="service-info md-100">
+         <h2>Our Services</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+       </div>
+       <div class="flex boxes md-wrap">
+         <div class="col-30 box md-100">
+          <img src="assets/media/consulting.svg" alt="consulting">
+          <h4>Consulting</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sequi incidunt inventore</p>
             <button>Read More</button>
           </div>
-          <div class="box col-30">
+          <div class="box col-30 md-100">
             <img src="assets/media/finance.svg" alt="consulting">
             <h4>Finance</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sequi incidunt inventore</p>
             <button>Read More</button>
           </div>
-          <div class="box col-30">
+          <div class="box col-30 md-100">
             <img src="assets/media/technology.svg" alt="consulting">
             <h4>technology</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sequi incidunt inventore</p>
@@ -93,72 +98,78 @@
         </div>
       </article>
     </section>
+    <!-- Solution -->
     <section class="solution">
-      <article class="container get-solution">
+      <article class="container get-solution md-100 ">
         <h3>Get all type of Solutions</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quaerat quia et nesciunt laudantium. Culpa iure iste incidunt at quae dicta deleniti vel, repellat ducimus alias quisquam enim, mollitia aperiam.</p>
         <button>Read More</button>
       </article>
     </section>
+    <!-- Consulting -->
     <section class="consulting">
-      <article class="container flex">
-        <div class="consulting-info col-48">
+      <article class="container flex md-wrap">
+        <div class="consulting-info col-48 md-100">
           <i class="far fa-circle"></i>
           <h3>We are Top Consulting Firm in the World</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur, sunt consequatur assumenda eum officia voluptas at ea eos est sapiente ipsum, </p>
           <button>Read More</button>
         </div>
-        <div class="col-48 consulting-img">
+        <div class="col-48 consulting-img md-100">
           <img src="assets/media/team.jpg" alt="team">
         </div>
       </article>
     </section>
+    <!-- Business -->
     <section class="business">
-      <article class="container flex space-between">
-        <div class="b-one">
+      <article class="container flex md-wrap">
+        <div class="b-one col-48 md-100">
           <h5>The best business consultancy services in world</h5>
           <p>There are many variations of passages of Lorem Ipsum available the majority alteration</p>
         </div>
-        <div class="b-sec">
+        <div class="b-sec col-48 md-100">
           <button>Request Quote</button>
         </div>
       </article>
     </section>
+    <!-- leader -->
     <section class="leader">
-      <article class="container flex">
-        <div class="col-48 leader-1">
+      <article class="container flex md-wrap">
+        <div class="col-48 leader-1 md-100">
           <h4>Industry leader in consulting services</h4>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in same. form, by incjected hummour, or randomised words. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius elligedi fugiat</p>
         </div>
-        <div class="col-48 leader-2">
+        <div class="col-48 leader-2 md-100">
           <img src="assets/media/img-woman-1.jpg" alt="woman">
         </div>
       </article>
     </section>
+    <!-- clients -->
     <section class="clients">
       <article class="container clients-box">
         <h4>Our Clients</h4>
         <div class="clients-img flex">
-          <img src="assets/media/spotify.png" alt="company-1">
-          <img src="assets/media/glasfit.png" alt="company-1">
-          <img src="assets/media/atlassian.png" alt="company-1">
-          <img src="assets/media/oracle.png" alt="company-1">
-          <img src="assets/media/airbnb.png" alt="company-1">
-          <img src="assets/media/patio.png" alt="company-1">
+          <img class="img1" src="assets/media/spotify.png" alt="company-1">
+          <img class="img2" src="assets/media/glasfit.png" alt="company-1">
+          <img class="img3" src="assets/media/atlassian.png" alt="company-1">
+          <img class="img4" src="assets/media/oracle.png" alt="company-1">
+          <img class="img5" src="assets/media/airbnb.png" alt="company-1">
+          <img class="img6" src="assets/media/patio.png" alt="company-1">
         </div>
       </article>
     </section>
   </main>
+  <!-- Footer -->
   <footer class="footer">
     <article class="container">
-      <div class="flex space-between">
-        <div class="footer-1">
+      <div class=" footerall flex space-between md-wrap">
+        <div class="footer-1 md-100">
           <h5>Reach us</h5>
           <span><i class="fas fa-location-arrow"></i> #123, Manhatt 7 Avenu, NYC</span>
           <span><i class="fas fa-phone"></i>+1-1245-678-980</span>
           <span><i class="fas fa-envelope"></i>info@yourdomin.com</span> 
         </div>
-        <div>
+        <div class="md-48">
           <h5>Site links</h5>
           <ul>
             <li><a href="#">Home</a></li>
@@ -168,7 +179,7 @@
             <li><a href="#">Pricing</a></li>
           </ul>
         </div>
-        <div>
+        <div class="md-48">
           <h5>Quick Links</h5>
           <ul>
             <li><a href="#">Blog</a></li>
@@ -177,7 +188,7 @@
             <li><a href="#">Terms & Conditions</a></li>
           </ul>
         </div>
-        <div>
+        <div class="md-100">
           <h5>Follow us</h5>
           <span>
             <i class="f-icons fab fa-facebook-f"></i>
