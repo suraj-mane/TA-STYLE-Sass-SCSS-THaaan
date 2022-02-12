@@ -12,6 +12,7 @@
   <script src="https://kit.fontawesome.com/bcf5c05fae.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!--Header-->
   <header>
     <article class="navbar-main">
       <div class="contact-nav">
@@ -33,10 +34,12 @@
           <div>
             <h1><a href="index.html" class="brand">Uni<span class="brand-name">TECH</span></a></h1>
           </div>
+          <label for="bar"><i class="fas fa-grip-lines"></i></label>
+          <input type="checkbox" id="bar">
           <ul class="flex space-between dropdown">
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About Us</a></li>
-            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
             <li class="active"><a href="#" class="nav-link ">Pages <i class="fas fa-chevron-down"></i></a>
               <ul>
                 <li><a href="pricing.html" class="b">pricing</a></li>
@@ -50,65 +53,68 @@
                 <li><a href="#" class="b">Blog Single</a></li>      
               </ul>
             </li>
-            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
           </ul>  
         </nav>
       </div>
     </article>
   </header>
   <main>
+    <!--Title-->
     <section class="title">
       <article class="container">
         <h1>Services</h1>
         <p>Aspernatur at enim excepturi facere in reiciendis</p>
       </article>
     </section>
+    <!--Consulting-->
     <section class="consulting service-main">
-      <article class="container flex">
-        <div class="service-info col-48">
+      <article class="container flex md-wrap">
+        <div class="service-info col-48 md-100">
           <span>Our services</span>
           <h3>Find the best service and consulting for affordable deals</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur, sunt consequatur assumenda eum officia voluptas at ea eos est sapiente ipsum, </p>
         </div>
-        <div class="col-48 consulting-img">
+        <div class="col-48 consulting-img md-100">
           <img src="assets/media/business-1.jpg" alt="team">
         </div>
       </article>
     </section>
+    <!--Product-->
     <section class="product">
       <article class="container">
         <h3>Our Products</h3>
         <p>Eius elligedi fugiat labore molestias provident qune quareat quirs</p>
-        <div class="product-box flex">
-          <div class="col-30 p-boxs">
+        <div class="product-box flex md-wrap">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/consulting.svg" alt="sheak hand">
             <h5>Execllent Featurs</h5>
             <p>Achive virtually any look and layout design within one UI kit solution</p>
           </div>
-          <div class="col-30 p-boxs">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/finance.svg" alt="sheak hand">
             <h5>Powerful API</h5>
             <p>Find What you need in one template and combine Featurs at wiu</p>
           </div>
-          <div class="col-30 p-boxs">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/blockchain.svg" alt="sheak hand">
             <h5>Blockchain Based</h5>
             <p>There are many variations of passages of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime vero dolorum dignissimos explicabo.</p>
           </div>
         </div>
         <hr>
-        <div class="product-box flex">
-          <div class="col-30 p-boxs">
+        <div class="product-box flex md-wrap">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/consulting.svg" alt="sheak hand">
             <h5>Vuejs include</h5>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde facere impedit, exercitationem assumenda non. Numquam, at praesentium dicta impedit omnis .</p>
           </div>
-          <div class="col-30 p-boxs">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/finance.svg" alt="sheak hand">
             <h5>React powered</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, aperiam? Libero a officiis voluptates beatae porro, praesentium reiciendis delectus cumque itaque temporibus, inventore </p>
           </div>
-          <div class="col-30 p-boxs">
+          <div class="col-30 p-boxs md-100">
             <img src="assets/media/blockchain.svg" alt="sheak hand">
             <h5>Angular compatiable</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloremque labore molestias! Odit eius excepturi animi </p>
@@ -116,9 +122,10 @@
         </div>
       </article>
     </section>
+    <!--Deal-->
     <section class="deal">
-      <article class="container flex space-between">
-        <div class="flex space-between">
+      <article class="container flex space-between md-center md-100">
+        <div class="flex space-between ">
           <h5>Best Deals</h5>
           <span></span>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -126,33 +133,35 @@
         <button>Grab the Deal</button>
       </article>
     </section>
+    <!--Awaeded-->
     <section class="awarded">
       <article class="container">
         <h2>Best Awarded</h2>
         <p>There are many variations of passages os lorem Ipsum available</p>
-        <div class="flex awarded-box">
-          <div class="col-48">
+        <div class="flex awarded-box md-wrap">
+          <div class="col-48 md-100">
             <i class="far fa-circle"></i>
             <h3>There are many variations of passages of Lorem lpsum available</h3>
             <p>There are many variations of passages of Lorem lpsum available</p>
           </div>
-          <div class="col-48">
+          <div class="col-48 md-100">
             <img src="assets/media/business-4.jpg" alt="laptop">
           </div>
         </div>
       </article>
     </section>
   </main>
+  <!--Footer-->
   <footer class="footer">
     <article class="container">
-      <div class="flex space-between">
-        <div class="footer-1">
+      <div class=" footerall flex space-between md-wrap">
+        <div class="footer-1 md-100">
           <h5>Reach us</h5>
           <span><i class="fas fa-location-arrow"></i> #123, Manhatt 7 Avenu, NYC</span>
           <span><i class="fas fa-phone"></i>+1-1245-678-980</span>
           <span><i class="fas fa-envelope"></i>info@yourdomin.com</span> 
         </div>
-        <div>
+        <div class="md-48">
           <h5>Site links</h5>
           <ul>
             <li><a href="#">Home</a></li>
@@ -162,7 +171,7 @@
             <li><a href="#">Pricing</a></li>
           </ul>
         </div>
-        <div>
+        <div class="md-48">
           <h5>Quick Links</h5>
           <ul>
             <li><a href="#">Blog</a></li>
@@ -171,7 +180,7 @@
             <li><a href="#">Terms & Conditions</a></li>
           </ul>
         </div>
-        <div>
+        <div class="md-100">
           <h5>Follow us</h5>
           <span>
             <i class="f-icons fab fa-facebook-f"></i>

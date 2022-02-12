@@ -69,9 +69,10 @@ body {
   line-height: 1.7;
 }
 
-.container {
+.container, .hero .hero-text {
   width: 1400px;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 .col-30 {
@@ -103,15 +104,21 @@ body {
       flex-wrap: wrap;
 }
 
-button, .get-solution button {
+.btn, .hero .hero-text button, .get-solution button, .consulting-info button, .b-sec button, .deal button {
   padding: 1rem 2rem;
   background-color: #fff;
-  border: 1px solid #DD3D45;
+  border: 1px solid #DC3C45;
   border-radius: 40px;
 }
 
 img {
   width: 100%;
+}
+
+.container, .hero .hero-text {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .contact-nav {
@@ -122,6 +129,14 @@ img {
 .contact-nav li a {
   color: #FFFFFF;
   margin-left: 1rem;
+}
+
+label {
+  display: none;
+}
+
+#bar {
+  display: none;
 }
 
 .second-navbar {
@@ -172,36 +187,39 @@ img {
   color: #1A1F24;
 }
 
-.banner {
-  position: relative;
-  bottom: 3.6rem;
+.hero img {
+  width: 100%;
 }
 
-.banner-info {
+.hero {
   position: relative;
-  top: 40rem;
-  left: 2rem;
 }
 
-.banner-info .banner-title {
-  font-size: 5rem;
+.hero .hero-text {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 13%;
+  z-index: 99;
+}
+
+.hero .hero-text h2 {
+  font-size: 50px;
   font-weight: 900;
-  width: 900px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.banner-text {
-  font-size: 3rem;
-  margin: 2rem 0;
+.hero .hero-text p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
 }
 
-.banner-btn {
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 40px;
-  background-color: #DD3D45;
+.hero .hero-text button {
   color: #fff;
-  font-size: 1.2rem;
+  background-color: #DD3D45;
 }
 
 .service {
@@ -311,7 +329,7 @@ img {
 }
 
 .b-one h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .b-one p {
@@ -320,12 +338,7 @@ img {
 
 .b-sec {
   margin-top: 1rem;
-}
-
-.b-sec button {
-  background-color: #DD3D45;
-  border: 1px solid #fff;
-  color: #fff;
+  text-align: right;
 }
 
 .leader {
@@ -412,6 +425,7 @@ img {
 
 .about-box {
   padding: 5rem 0;
+  text-align: center;
 }
 
 .about-box img {
@@ -426,6 +440,7 @@ img {
 
 .about-main {
   padding: 1rem 0;
+  text-align: left;
 }
 
 .about-boxs-text h4 {
@@ -532,11 +547,6 @@ img {
   padding: 2rem 0;
 }
 
-.service-info {
-  text-align: left;
-  padding-right: 5rem;
-}
-
 .service-info span {
   color: #DD3D45;
   font-size: 2rem;
@@ -609,7 +619,6 @@ img {
 .deal button {
   background-color: #DD3D45;
   color: #fff;
-  border: 2px solid #fff;
 }
 
 .awarded {
@@ -726,5 +735,69 @@ img {
 .error-title {
   font-size: 3rem;
   font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown {
+    display: none;
+    text-align: center;
+    background-color: #f07272;
+  }
+  label {
+    display: block;
+    background-color: #DD3D45;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: white;
+  }
+  #bar:checked + .dropdown {
+    display: block;
+  }
+  .banner-img {
+    height: 30px;
+  }
+  .box {
+    margin: 1rem 0;
+  }
+  .img {
+    width: 100%;
+  }
+  .md-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .md-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .md-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .md-48 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+  .business {
+    text-align: center;
+  }
+  .b-sec {
+    text-align: center;
+  }
+  .deal {
+    text-align: center;
+  }
+  .img1, .img2, .img3 {
+    display: none;
+  }
+  .footer {
+    padding: 0 2rem;
+  }
+  .footerall div {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

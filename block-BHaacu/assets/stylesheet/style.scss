@@ -2,6 +2,12 @@
 @import "veriable";
 @import "genral";
 
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 .contact-nav {
   background-color: $primary-color;
   padding: 1.2rem 0;
@@ -9,6 +15,12 @@
     color: $icon-color;
     margin-left: 1rem;
   }
+}
+label {
+  display: none;
+}
+#bar {
+  display: none;
 }
 .second-navbar {
   padding: 2rem 0;
@@ -51,32 +63,38 @@
   font-size: 1.5rem;
   color: $text-color;
 }
-.banner {
-  position: relative;
-  bottom: 3.6rem;
-}
-.banner-info {
-  position: relative;
-  top: 40rem;
-  left: 2rem;
-  .banner-title {
-    font-size: 5rem;
-    font-weight: 900;
-    width: 900px;
-    margin-bottom: 1.5rem;
+.hero {
+  img{
+      width: 100%;
   }
 }
-.banner-text {
-  font-size: 3rem;
-  margin: 2rem 0;
-}
-.banner-btn{
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 40px;
-  background-color: $primary-color;
-  color: #fff;;
-  font-size: 1.2rem;
+.hero{
+  .hero-text{ 
+      @extend .container;
+      width: 30%;
+      position: absolute;
+      top: 40%;
+      left: 13%;
+      z-index: 99;
+      h2{
+          font-size: 50px;
+          font-weight: 900;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+      }
+      p{
+          font-weight: 500;
+          font-size: 20px;
+          margin-bottom: 20px;
+          text-transform: capitalize;
+      }
+      button{
+          @extend .btn;
+          color: #fff;
+          background-color: $primary-color;
+      }
+  }
+ position: relative;
 }
 .service {
   text-align: center;
@@ -140,7 +158,7 @@
     color: $small-text;
   }
   button {
-    @extend button
+    @extend .btn;
   }
 }
 .consulting {
@@ -163,6 +181,9 @@
     color: $small-text;
     margin-bottom: 1rem;
   }
+  button {
+    @extend .btn;
+  }
 }
 .consulting-img {
   margin-left: 5rem;
@@ -174,7 +195,7 @@
 }
 .b-one {
   h5 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   p {
     font-size: 1.2rem;
@@ -182,10 +203,9 @@
 }
 .b-sec {
   margin-top: 1rem;
+  text-align: right;
   button {
-    background-color: $primary-color;
-    border: 1px solid #fff;
-    color: #fff;
+    @extend .btn;
   }
 }
 .leader {
@@ -260,6 +280,7 @@
 }
 .about-box {
   padding: 5rem 0;
+  text-align: center;
   img {
     height: 300px;
     width: 300px;
@@ -271,6 +292,7 @@
 }
 .about-main {
   padding: 1rem 0;
+  text-align: left;
 }
 .about-boxs-text {
   h4{
@@ -359,9 +381,7 @@
 .service-main {
   padding: 2rem 0;
 }
-.service-info {
-  text-align: left;
-  padding-right: 5rem;
+.service-info { 
   span {
     color: $primary-color;
     font-size: 2rem;
@@ -419,9 +439,9 @@
     padding-top: 0.8rem;
   }
   button {
+    @extend .btn;
     background-color: $primary-color;
     color: #fff;
-    border: 2px solid #fff;
   }
 }
 .awarded {
@@ -517,3 +537,62 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 768px) {
+ 
+  .dropdown {
+    display: none;
+    text-align: center;
+    background-color: rgb(240, 114, 114);
+  }
+  label {
+    display: block;
+    background-color: $primary-color;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: white;
+  }
+  #bar:checked + .dropdown{
+    display: block;
+  }
+  .banner-img {
+    height: 30px;
+  }
+  .box {
+    margin: 1rem 0;
+  }
+  .img {
+    width: 100%;
+  }
+  .md-wrap {
+    flex-wrap: wrap;
+  }
+  .md-center {
+    justify-content: center;
+  }
+  .md-100 {
+    flex: 0 1 100%;
+  }
+  .md-48 {
+    flex: 0 1 48%;
+  } 
+  .business {
+    text-align: center;
+  }
+  .b-sec {
+    text-align: center;
+  }
+  .deal {
+    text-align: center;
+  }
+  .img1, .img2 , .img3 {
+    display: none;
+  }
+  .footer {
+    padding: 0 2rem;
+  }
+  .footerall {
+    div {
+      margin: 1rem 0;
+    }
+  }
+}
